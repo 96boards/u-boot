@@ -638,6 +638,10 @@ config TARGET_VEXPRESS64_JUNO
 	bool "Support Versatile Express Juno Development Platform"
 	select ARM64
 
+config TARGET_96BOARDS_HIKEY
+	bool "Support 96Boards HiKey Platform"
+	select ARM64
+
 config TARGET_LS2085A_EMU
 	bool "Support ls2085a_emu"
 	select ARM64
@@ -773,6 +777,7 @@ source "board/armadeus/apf27/Kconfig"
 source "board/armltd/integrator/Kconfig"
 source "board/armltd/vexpress/Kconfig"
 source "board/armltd/vexpress64/Kconfig"
+source "board/96boards/hikey64/Kconfig"
 source "board/bachmann/ot1200/Kconfig"
 source "board/balloon3/Kconfig"
 source "board/barco/platinum/Kconfig"

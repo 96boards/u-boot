@@ -1,0 +1,12 @@
+if TARGET_96BOARDS_HIKEY
+
+config SYS_BOARD
+	default "hikey64"
+
+config SYS_VENDOR
+	default "96boards"
+
+config SYS_CONFIG_NAME
+	default "hikey_aemv8a"
+
+endif
