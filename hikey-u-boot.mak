@@ -16,6 +16,7 @@ have-crosscompiler:
 
 build: have-crosscompiler FORCE
 	rm -rf $(build_dir)
+	@mkdir -p $(output_dir)
 	@mkdir -p $(build_dir)
 	$(MAKE) O=$(build_dir) CROSS_COMPILE=$(CROSS_COMPILE) distclean
 	$(MAKE) O=$(build_dir) CROSS_COMPILE=$(CROSS_COMPILE) hikey_aemv8a_config
